@@ -32,7 +32,7 @@
 				>
 				<!-- nav items-->
 				<nav>
-					<div class="nav-item-box">
+					<div class="nav-item-flex">
 						<ul class="nav">
 							<li>
 								<a class="nav-item-agencja" href="index.html"
@@ -55,27 +55,32 @@
 					</div>
 				</nav>
 				<!-- adress top-->
-				<a class="email" href="email:info@devstudio.com"
-					>info@devstudio.com</a
-				>
-				<a class="phonenumber" href="tel:+48111111111"
-					>+48 111 111 111</a
-				>
+				<div>
+					<a class="email" href="email:info@devstudio.com"
+						>info@devstudio.com</a
+					>
+					<a class="phonenumber" href="tel:+48111111111"
+						>+48 111 111 111</a
+					>
+				</div>
 			</div>
 		</header>
 		<!-- HERO -->
 		<main>
-			<section class="effective-flex container">
-				<h1>
-					<span class="effective"
-						>EFEKTYWNE ROZWIAZANIA<br />DLA WASZEGO BIZNESU</span
-					>
-				</h1>
-				<button class="order" type="button">Zamow Usluge</button>
+			<section class="sections container effective-pad">
+				<div class="effective-flex">
+					<h1>
+						<span class="effective"
+							>EFEKTYWNE ROZWIAZANIA<br />DLA WASZEGO
+							BIZNESU</span
+						>
+					</h1>
+					<button class="order" type="button">Zamow Usluge</button>
+				</div>
 			</section>
 			<!-- Lorem List-->
-			<section class="sections">
-				<div class="container lorem-flex">
+			<section class="sections container">
+				<div class="lorem-flex">
 					<ul>
 						<li>
 							<h2 class="lorem-list">LOREM IPSUM</h2>
@@ -114,9 +119,9 @@
 			</section>
 
 			<!-- What We Do -->
-			<section class="wwdpad sections">
+			<section class="wwd-pad sections container">
 				<h3 class="whatwedo">Czym się zajmujemy</h3>
-				<div class="container what-we-do-img-flex">
+				<div class="what-we-do-img-flex">
 					<img
 						src="images/img.jpg"
 						width="370"
@@ -139,7 +144,7 @@
 			</section>
 			<!-- Our Team -->
 			<section class="container sections our-team-box">
-				<h2 class="ourteam">Nasz zespol</h2>
+				<h2 class="ourteam">Nasz zespół</h2>
 				<div class="our-team-flex">
 					<figure>
 						<img
@@ -194,12 +199,14 @@
 		</main>
 		<!-- adress -->
 		<footer>
-			<div class="backup">
-				<div class="container">
+			<section class="sections container">
+				<div class="item-logo-bottom">
 					<a class="menu-logo-bottom" href="index.html"
 						><span class="logo-bottom">Web</span>Studio</a
 					>
-					<address>
+				</div>
+				<address>
+					<div class="footer-flex">
 						<p class="city">m. Warszawa, Aleje Jerozolimskie 21</p>
 						<a class="contact" href="mailto:info@example.com"
 							>info@example.com</a
@@ -208,9 +215,9 @@
 						<a class="contact" href="+48111111111"
 							>+48 111 111 111</a
 						>
-					</address>
-				</div>
-			</div>
+					</div>
+				</address>
+			</section>
 		</footer>
 	</body>
 </html>
