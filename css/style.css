@@ -1,9 +1,9 @@
 * {
 	margin: 0;
+	padding: 0;
 }
 .container {
 	width: 1200px;
-	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -15,7 +15,6 @@ body {
 }
 img {
 	display: block;
-	vertical-align: center;
 }
 :root {
 	--text-color-blue: rgba(33, 150, 243, 1);
@@ -33,6 +32,7 @@ img {
 	--effective-background-grey: rgba(47, 48, 58, 1);
 	--ourteam-background-grey: rgba(245, 244, 250, 100%);
 	--project-border-white: rgba(238, 238, 238, 1);
+	--box-shadow: rgba(0, 0, 0, 0.25);
 }
 a {
 	text-decoration: none;
@@ -53,7 +53,7 @@ a {
 	text-decoration: none;
 	letter-spacing: 0.03em;
 	display: block;
-	margin-left: 70px;
+	padding-right: 93px;
 }
 .menu-logo:hover {
 	color: var(--hover-color-blue);
@@ -73,7 +73,7 @@ a {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	margin-right: 32px;
+	margin-right: 46px;
 }
 .nav-item-portfolio:hover {
 	color: var(--hover-color-blue);
@@ -87,7 +87,7 @@ a {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	margin-right: 32px;
+	padding-right: 46px;
 }
 .nav-item-kontakty:hover {
 	color: var(--hover-color-blue);
@@ -101,9 +101,11 @@ a {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	margin-right: 371px;
 }
 .nav-item-flex {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 }
 .email:hover {
@@ -118,8 +120,7 @@ a {
 	line-height: 1.14;
 	color: var(--text-color-grey);
 	letter-spacing: 0.02em;
-	padding-right: 50px;
-	margin-left: 371px;
+	margin-right: 50px;
 }
 .phonenumber:hover {
 	color: var(--hover-color-blue);
@@ -137,7 +138,6 @@ a {
 }
 ul {
 	list-style-type: none;
-	display: inline-flex;
 }
 .order {
 	width: 200px;
@@ -162,32 +162,23 @@ ul {
 }
 .text {
 	color: var(--text-color-grey);
-	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.7;
 	letter-spacing: 0.03em;
 }
-.filterodd:hover {
+.filter-button:hover {
 	background-color: var(--hover-color-blue);
 	color: var(--text-color-white);
 	cursor: pointer;
+	box-shadow: 0px 4px 4px 0px var(--box-shadow);
 }
-.filtereven:hover {
-	background-color: var(--hover-color-blue);
-	color: var(--text-color-white);
-	cursor: pointer;
-}
-.filterodd:focus {
+.filter-button:focus {
 	background-color: var(--focus-color-blue);
-	box-shadow: 1px 0px var(--focus-color-blue);
 	color: var(--text-color-white);
+	box-shadow: 0px 4px 4px 0px var(--box-shadow);
 }
-.filtereven:focus {
-	background-color: var(--focus-color-blue);
-	box-shadow: 1px 0px var(--focus-color-blue);
-	color: var(--text-color-white);
-}
-.filterodd {
+
+.filter-button {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.6;
@@ -195,25 +186,9 @@ ul {
 	color: var(--text-color-black);
 	border: 1px;
 	border-radius: 4px;
-	text-align: center;
 	letter-spacing: 0.03em;
-	width: 121px;
-	height: 38px;
-	margin-right: 9px;
-}
-.filtereven {
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.6;
-	background-color: var(--background-color-white);
-	color: var(--text-color-black);
-	border: 1px;
-	border-radius: 4px;
-	text-align: center;
-	letter-spacing: 0.03em;
-	width: 93px;
-	height: 38px;
-	margin-right: 9px;
+	padding: 6px 20px;
+	box-shadow: 0px 4px 4px 0px var(--box-shadow);
 }
 .projectname {
 	color: var(--text-color-black);
@@ -221,8 +196,6 @@ ul {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	padding-left: 24px;
-	padding-top: 20px;
 }
 .projecttype {
 	color: var(--text-color-grey);
@@ -230,8 +203,6 @@ ul {
 	font-size: 16px;
 	line-height: 1.8;
 	letter-spacing: 0.03em;
-	padding-left: 24px;
-	padding-bottom: 20px;
 }
 
 .effective {
@@ -241,7 +212,10 @@ ul {
 	color: var(--text-color-white);
 	letter-spacing: 0.06em;
 	text-align: center;
-	margin-top: 200px;
+}
+.effective-bg {
+	background-color: var(--background-color-black);
+	padding: 200px;
 }
 .whatwedo {
 	color: var(--text-color-black);
@@ -267,6 +241,11 @@ ul {
 .ourteam:hover {
 	color: var(--text-color-blue);
 }
+.team-mate {
+	box-shadow: 0px 4px 4px var(--box-shadow);
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
 .name {
 	font-weight: 500;
 	font-size: 16px;
@@ -274,6 +253,8 @@ ul {
 	color: var(--text-color-black);
 	letter-spacing: 0.03em;
 	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 .job {
 	font-weight: 400;
@@ -282,6 +263,8 @@ ul {
 	color: var(--text-color-grey);
 	letter-spacing: 0.03em;
 	text-align: center;
+	padding-bottom: 30px;
+	box-shadow: 0px 4px 4px var(--box-shadow);
 }
 figure:hover {
 	border-color: var(--border-color-blue);
@@ -299,15 +282,14 @@ figure:hover {
 	font-size: 26px;
 	line-height: 1.2;
 	text-decoration: none;
+	display: block;
+	padding-bottom: 20px;
+	margin-left: 215px;
+	padding-top: 60px;
 }
 .item-logo-bottom {
-	margin-left: 215px;
 	padding-bottom: 20px;
 }
-footer {
-	background-color: var(--background-color-black);
-}
-
 address {
 	font-style: normal;
 	color: var(--text-color-white);
@@ -324,34 +306,23 @@ address {
 	padding-bottom: 94px;
 }
 .header-flex {
-	width: 1600px;
-	height: 80px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
 	border-bottom: 1px solid var(--border-color-grey);
+	padding: 32px 0px;
 }
 .effective-flex {
-	width: 1600px;
-	height: 600px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	background-color: var(--effective-background-grey);
-}
-.effective-pad {
-	padding-top: 0px;
-	padding-bottom: 0px;
 }
 .lorem-flex {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
-	margin-left: 215px;
-	margin-right: 215px;
-	padding-right: 30px;
+	gap: 30px;
 }
 .wwd-pad {
 	padding-top: 0px;
@@ -361,22 +332,28 @@ address {
 	flex-direction: row;
 	justify-content: center;
 	gap: 30px;
-	margin-left: 215px;
-	margin-right: 215px;
 }
 .our-team-box {
 	background-color: var(--ourteam-background-grey);
+	width: 100%;
+	padding-top: 94px;
 }
 .our-team-flex {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	gap: 30px;
+	border-radius: 0px 0px 4px 4px;
 }
-.footer-flex {
+.footer-effect {
+	background-color: var(--background-color-black);
+	width: 100%;
+}
+.address-flex {
 	display: flex;
 	flex-direction: column;
 	padding-left: 215px;
+	padding-bottom: 60px;
 	gap: 9px;
 }
 .filter-flex {
@@ -384,7 +361,7 @@ address {
 	flex-direction: row;
 	justify-content: center;
 	padding-bottom: 34px;
-	row-gap: 9px;
+	gap: 8px;
 }
 .project-set {
 	display: flex;
@@ -393,8 +370,15 @@ address {
 	flex-wrap: wrap;
 	gap: 30px;
 }
-.project {
+.project-border {
+	color: var(--text-color-grey);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: 0.03em;
+	padding: 24px 20px;
 	border-right: 1px solid var(--project-border-white);
 	border-bottom: 1px solid var(--project-border-white);
 	border-left: 1px solid var(--project-border-white);
+	box-shadow: 0px 4px 4px 0px var(--box-shadow);
 }
