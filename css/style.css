@@ -140,14 +140,13 @@ ul {
 	list-style-type: none;
 }
 .order {
-	width: 200px;
-	height: 50px;
 	border-color: var(--border-color-blue);
 	border-radius: 4px;
 	margin-top: 30px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.6;
+	padding: 10px 45px;
 	background-color: var(--background-color-blue);
 	color: var(--text-color-white);
 	cursor: pointer;
@@ -175,7 +174,6 @@ ul {
 .filter-button:focus {
 	background-color: var(--focus-color-blue);
 	color: var(--text-color-white);
-	box-shadow: 0px 4px 4px 0px var(--box-shadow);
 }
 
 .filter-button {
@@ -188,7 +186,6 @@ ul {
 	border-radius: 4px;
 	letter-spacing: 0.03em;
 	padding: 6px 20px;
-	box-shadow: 0px 4px 4px 0px var(--box-shadow);
 }
 .projectname {
 	color: var(--text-color-black);
@@ -226,9 +223,6 @@ ul {
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
 }
-.whatwedo:hover {
-	color: var(--text-color-blue);
-}
 .ourteam {
 	color: var(--text-color-black);
 	font-weight: 700;
@@ -237,9 +231,6 @@ ul {
 	text-align: center;
 	letter-spacing: 0.03em;
 	margin-bottom: 50px;
-}
-.ourteam:hover {
-	color: var(--text-color-blue);
 }
 .team-mate {
 	box-shadow: 0px 4px 4px var(--box-shadow);
@@ -305,12 +296,14 @@ address {
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
+.header-box {
+	border-bottom: 1px solid var(--border-color-grey);
+}
 .header-flex {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid var(--border-color-grey);
 	padding: 32px 0px;
 }
 .effective-flex {
@@ -335,8 +328,6 @@ address {
 }
 .our-team-box {
 	background-color: var(--ourteam-background-grey);
-	width: 100%;
-	padding-top: 94px;
 }
 .our-team-flex {
 	display: flex;
@@ -380,5 +371,4 @@ address {
 	border-right: 1px solid var(--project-border-white);
 	border-bottom: 1px solid var(--project-border-white);
 	border-left: 1px solid var(--project-border-white);
-	box-shadow: 0px 4px 4px 0px var(--box-shadow);
 }
