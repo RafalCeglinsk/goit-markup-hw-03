@@ -159,6 +159,10 @@ ul {
 	letter-spacing: 0.03em;
 	padding-bottom: 10px;
 }
+.lorem-pad {
+	padding-top: 94px;
+	padding-bottom: 0px;
+}
 .text {
 	color: var(--text-color-grey);
 	font-size: 14px;
@@ -275,8 +279,6 @@ figure:hover {
 	text-decoration: none;
 	display: block;
 	padding-bottom: 20px;
-	margin-left: 215px;
-	padding-top: 60px;
 }
 .item-logo-bottom {
 	padding-bottom: 20px;
@@ -304,7 +306,7 @@ address {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	padding: 32px 0px;
+	padding: 25px 0px 24px 0px;
 }
 .effective-flex {
 	display: flex;
@@ -338,20 +340,18 @@ address {
 }
 .footer-effect {
 	background-color: var(--background-color-black);
-	width: 100%;
+	padding: 60px 0px;
 }
 .address-flex {
 	display: flex;
 	flex-direction: column;
-	padding-left: 215px;
-	padding-bottom: 60px;
 	gap: 9px;
 }
 .filter-flex {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding-bottom: 34px;
+	padding-bottom: 50px;
 	gap: 8px;
 }
 .project-set {
